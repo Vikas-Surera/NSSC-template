@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.preloader{
+    z-index: 100000;
+    background-image: linear-gradient(90deg,#100c2a, #302b63, #24243e);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.remove{
+    display: none;
+}
+.preloader-logo{
+    position: absolute;
+    height: 250px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#logo_circle{
+    animation: rotation 1s ease-in 0s  normal both;
+    transform-origin: 54% 50%;
+}
+
+#logo_rocket{
+    animation: takeoff .5s ease-in 2.9s normal both;
+}
+
+#logo_boy{
+    animation: boypop 0.6s ease-in  1s normal both;
+}
+
+#logo_nssc{
+    transform-origin: 54% 51%;
+    animation: nssclogo 1.3s ease-in-out 1.6s normal both;
+}
+
+/* ROCKET FUMES */
+/*
+#logo_fumes{
+    animation: blast 0.5s ease-in 2.5s normal both;
+}*/
+
+#Vector_3{
+    animation: blast 0.2s ease-in 3.20s normal both;
+}
+#Vector_4{
+    animation: blast 0.3s ease-in 3.12s normal both;
+}
+#Vector_6{
+    animation: blast 0.3s ease-in 3.20s normal both; /*7*/
+}
+#Vector_7{
+    animation: blast 0.3s ease-in 3.40s normal both; /*6*/
+}
+#Vector_8{
+    animation: blast 0.3s ease-in 3.30s normal both; /*4*/
+}
+#Vector_9{
+    animation: blast 0.2s ease-in 3.3s normal both; /*3*/
+}
+#Vector_5{
+    animation: blast 0.3s ease-in 3.4s normal both; /*2*/
+}
+#Vector_10{
+     animation: blast 0.3s ease-in 3.4s normal both; /*1*/
+}
+@keyframes nssclogo{
+    0%{
+        transform: rotate(-210deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes blast{
+    0%{
+        
+        opacity: 0;
+    }
+    100%{
+        
+        opacity: 1;
+    }
+}
+
+@keyframes boypop{
+    0%{
+        transform: translate(-15%,15%);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes takeoff{
+    0%{
+        transform: translate(25%,25%);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes rotation{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/*-------------------- RESPONSIVE LOADER -------------------*/
+@media (width:776px){
+    .preloader-logo{
+        height: 100px;
+        width: auto;
+    }
+}

@@ -1,0 +1,91 @@
+
+/*---------------------
+  Helper CSS
+-----------------------*/
+
+.section-title {
+	text-align: center;
+	margin-bottom: 52px;
+}
+
+.section-title h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: #171822;
+	margin-bottom: 10px;
+}
+
+.section-title p {
+	font-size: 18px;
+	color: #6a6b7c;
+	margin-bottom: 0;
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.spad {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.spad-2 {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+	color: #fff;
+}
+
+.bg-gradient,
+.bd-text .bd-tag-share .s-share a:hover,
+.bh-text .play-btn,
+.schedule-table-tab .nav-tabs .nav-item .nav-link.active,
+.newslatter-inner .ni-form button,
+.latest-item .li-tag,
+.price-item .price-btn:hover,
+.price-item .pi-price,
+.price-item .tr-tag,
+.schedule-tab .nav-tabs .nav-item .nav-link.active,
+.site-btn {
+	/*background-image: -o-linear-gradient(-20deg, #2b5876 0%, #4e4376 100%), -o-linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+	background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%),linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);*/
+	background-color: rgb(63, 24, 95);
+}
+
+/* buttons */
+
+.primary-btn {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 12px 40px;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 50px;
+	background-image: -webkit-gradient(linear, left top, right top, from(#005c97), to(#363795)), -webkit-gradient(linear, left top, right top, from(#005c97), to(#363795));
+	background-image: -o-linear-gradient(left, #005c97 0%, #363795 100%), -o-linear-gradient(left, #005c97 0%, #363795 100%);
+	background-image: linear-gradient(to right, #005c97 0%, #363795 100%), linear-gradient(to right, #005c97 0%, #363795 100%);
+}
+
+.site-btn {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 600;
+	border: none;
+	padding: 10px 40px 12px;
+	border-radius: 50px;
+}
